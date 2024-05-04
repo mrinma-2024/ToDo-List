@@ -12,25 +12,6 @@ const trySchema=new mongoose.Schema({
     name:String
 });
 const item=mongoose.model("second",trySchema);
-// const todo=new item({
-//     name:"create videos"
-// });
-// const todo2=new item({
-//     name:"Learn DSA"
-// });
-// const todo3=new item({
-//     name:"Learn React"
-// });
-// const todo4=new item({
-//     name:"Practice apti"
-// });
-// todo2.save();
-// todo3.save();
-// todo4.save();
-
-
-// var items=[];
-// var example="working";
 app.get("/",function(req,res){
     item.find({})
     .then(function(founditems){
